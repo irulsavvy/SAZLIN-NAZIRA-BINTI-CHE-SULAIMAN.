@@ -1,0 +1,113 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    nav {
+      background: pink;
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      transition: color 0.5s ease, transform 0.5s ease;
+    }
+
+    nav a:hover {
+      color: white;
+      transform: scale(1.1);
+    }
+
+    nav a:not(:last-child)::after {
+      content: " | ";
+      margin-left: 20px;
+      color: #555;
+    }
+
+    .welcome-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .welcome-container h2 {
+      font-size: 36px;
+      color: #FF69B4;
+      margin-bottom: 10px;
+    }
+
+    .welcome-container p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .profile-img {
+      margin: 30px auto;
+      display: block;
+      width: 300px;
+      height: 350px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: pink;
+      color: black;
+      padding: 30px 0;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Biodata.html">Profile</a>
+    <a href="Education.html">Academic</a>
+    <a href="Experience.html">Experience</a>
+    <a href="Family.html">Family</a>
+    <a href="Gallery.html">Gallery</a>
+  </nav>
+
+  <div class="welcome-container">
+    <h2>Welcome</h2>
+    <p>Get to know me now, and have fun!</p>
+
+    <img class="profile-img" src="myself/m3.jpg" alt="My Profile Picture">
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <p>SAZLIN NAZIRA BINTI CHE SULAIMAN.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
